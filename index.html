@@ -1,0 +1,618 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild AI — AI Voice Receptionist & Automation Agency</title>
+  <meta name="description" content="Wild AI answers calls, qualifies leads, and books appointments automatically — 24/7, across every industry.">
+  <link rel="icon" type="image/png" href="https://www.wild-ai.net/uploads/logo-1777127155802.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="page-transition"></div>
+
+<!-- ─── Nav ─────────────────────────────────────────────────── -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://www.wild-ai.net/uploads/logo-1777127155802.png" alt="Wild AI" style="height:36px;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#how">How It Works</a></li>
+      <li class="has-dropdown">
+        <span class="nav-trigger">Industries <span class="caret">▾</span></span>
+        <div class="dropdown">
+          <a href="niches/home-services.html"><span class="d-emoji">🏠</span>Home Services</a>
+          <a href="niches/dental.html"><span class="d-emoji">🦷</span>Dental Practices</a>
+          <a href="niches/medical.html"><span class="d-emoji">⚕️</span>Medical Practices</a>
+          <a href="niches/salons.html"><span class="d-emoji">✂️</span>Salons &amp; Spas</a>
+          <a href="niches/restaurants.html"><span class="d-emoji">🍕</span>Restaurants</a>
+          <a href="niches/law-firms.html"><span class="d-emoji">⚖️</span>Law Firms</a>
+          <a href="niches/ecommerce.html"><span class="d-emoji">🛒</span>E-Commerce</a>
+          <a href="niches/real-estate.html"><span class="d-emoji">🏢</span>Real Estate</a>
+          <a href="niches/medspa.html"><span class="d-emoji">💆</span>Med Spa</a>
+        </div>
+      </li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://calendar.app.google/ueaZa2oXfEFxtex78" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Talk To Us</a>
+      <a href="https://calendar.app.google/ueaZa2oXfEFxtex78" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Start Free Trial</a>
+    </div>
+    <button class="hamburger" id="ham" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <a href="#how">How It Works</a>
+  <a href="industries.html">Industries</a>
+  <a href="#features">Features</a>
+  <a href="#">Blog</a>
+  <a href="https://calendar.app.google/ueaZa2oXfEFxtex78" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Talk To Us</a>
+  <a href="https://calendar.app.google/ueaZa2oXfEFxtex78" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Start Free Trial</a>
+</div>
+
+<!-- ─── Hero ─────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="fi">
+        <div class="badge"><span class="badge-dot"></span>AI Voice Receptionist — 24/7</div>
+      </div>
+      <div class="hero-h1-wrap">
+        <h1 class="fi" style="transition-delay:.06s">
+          Answer calls, qualify leads, and<br><span id="typewriter"></span> — automatically.
+        </h1>
+      </div>
+      <p class="fi" style="transition-delay:.12s">Wild AI works across every industry. Never miss a call, never lose a lead.</p>
+      <div class="hero-ctas fi" style="transition-delay:.18s">
+        <a href="https://calendar.app.google/ueaZa2oXfEFxtex78" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Start Free Trial</a>
+        <a href="#how" class="btn btn-ghost btn-lg">See How It Works</a>
+      </div>
+      <p class="hero-credit fi" style="transition-delay:.24s">No credit card required &nbsp;·&nbsp; Cancel anytime</p>
+
+      <div class="hero-card-wrap fi" style="transition-delay:.32s">
+        <div class="call-card">
+          <div class="cc-header">
+            <div class="cc-avatar">📞</div>
+            <div class="cc-info">
+              <div class="cc-caller">Incoming Call — (555) 823-4411</div>
+              <div class="cc-num">Potential Customer</div>
+            </div>
+            <div class="cc-live"><div class="cc-live-dot"></div>Wild AI Active</div>
+          </div>
+          <div class="cc-body">
+            <div class="cc-msg"><span class="speaker">Wild AI: </span><span class="text">"Hi! Thanks for calling. How can I help you today?"</span></div>
+            <div class="cc-msg"><span class="speaker" style="color:var(--t2)">Caller: </span><span class="text">"I need to schedule an appointment for next Tuesday..."</span></div>
+            <div class="cc-msg"><span class="speaker">Wild AI: </span><span class="text">"Perfect — I've got Tuesday at 2 PM available. Want me to book that for you?"</span></div>
+          </div>
+          <div class="cc-footer">
+            <div class="cc-pill">● LIVE SESSION</div>
+            <div class="cc-timer" id="cc-timer">0:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Stats Bar ────────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stat-item">
+      <div class="stat-num" data-count="1200" data-suffix="+">1,200+</div>
+      <div class="stat-label">Calls Handled</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">99.9%</div>
+      <div class="stat-label">Uptime Guaranteed</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-count="30" data-suffix="+">30+</div>
+      <div class="stat-label">Businesses Served</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Always On</div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── Feature Blocks ────────────────────────────────────────── -->
+<section id="features">
+  <div class="container">
+
+    <!-- Block 1: Answer Every Call -->
+    <div class="feat-block">
+      <div class="feat-visual fi">
+        <div class="mini-call" style="width:100%">
+          <div class="mc-bar">
+            <div class="mc-av">📞</div>
+            <div class="mc-info">
+              <div class="mc-name">(555) 391-2847 — New Lead</div>
+              <div class="mc-sub">Routed instantly</div>
+            </div>
+            <div class="mc-live"><div class="mc-dot"></div>Live</div>
+          </div>
+          <div class="mc-msgs">
+            <div class="mc-msg"><span class="s">Wild AI: </span><span class="t">"Thanks for calling! What can I help with today?"</span></div>
+            <div class="mc-msg"><span class="s" style="color:var(--t2)">Caller: </span><span class="t">"I need someone out for an estimate this week."</span></div>
+            <div class="mc-msg"><span class="s">Wild AI: </span><span class="t">"I'll get you booked. What's the best day for you?"</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="feat-text fi" style="transition-delay:.08s">
+        <div class="feat-eyebrow">
+          <div class="feat-icon-sm">📞</div>
+          <span class="eyebrow" style="margin:0">Answer Every Call</span>
+        </div>
+        <h2>No more missed calls.<br>No more hold music.</h2>
+        <p>Wild AI picks up instantly, speaks naturally, and handles the conversation start to finish — without your team lifting a finger.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-check">✓</div>Answers in under 1 second, 24/7</div>
+          <div class="feat-point"><div class="feat-check">✓</div>Natural conversation — not a robot menu</div>
+          <div class="feat-point"><div class="feat-check">✓</div>Handles multiple calls simultaneously</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 2: Multi-Channel (reversed) -->
+    <div class="feat-block">
+      <div class="feat-text fi">
+        <div class="feat-eyebrow">
+          <div class="feat-icon-sm">💬</div>
+          <span class="eyebrow" style="margin:0">Multi-Channel Messaging</span>
+        </div>
+        <h2>Phone, SMS, chat, DMs —<br>one AI agent for all of it.</h2>
+        <p>Wild AI responds instantly across every channel your customers use — from phone calls to Instagram DMs — keeping every conversation consistent and on-brand.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-check">✓</div>Phone, SMS &amp; web chat</div>
+          <div class="feat-point"><div class="feat-check">✓</div>Instagram &amp; Facebook DMs</div>
+          <div class="feat-point"><div class="feat-check">✓</div>All channels, one unified agent</div>
+        </div>
+      </div>
+      <div class="feat-visual fi" style="transition-delay:.08s">
+        <div class="ch-wrap">
+          <div class="ch-bubble in"><div class="ch-label">📱 SMS</div>Hi, do you have availability on Friday?</div>
+          <div class="ch-bubble out">Yes! I have Friday at 10am or 3pm. Which works for you?</div>
+          <div class="ch-bubble in"><div class="ch-label">📸 Instagram DM</div>What are your prices for a full detail?</div>
+          <div class="ch-bubble out">Our full detail starts at $199. Want me to book you in?</div>
+          <div class="ch-bubble in"><div class="ch-label">💬 Web Chat</div>Are you open on weekends?</div>
+          <div class="ch-bubble out">We're open Sat &amp; Sun 9am–5pm. Book online anytime!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 3: Qualify & Capture -->
+    <div class="feat-block">
+      <div class="feat-visual fi">
+        <div class="crm-card" style="width:100%">
+          <div class="crm-head">
+            <div class="crm-title">New Lead Captured</div>
+            <div class="crm-tag">● Qualified</div>
+          </div>
+          <div class="crm-row"><div class="crm-lbl">Name</div><div class="crm-val">Sarah Mitchell</div></div>
+          <div class="crm-row"><div class="crm-lbl">Phone</div><div class="crm-val">(407) 552-8813</div></div>
+          <div class="crm-row"><div class="crm-lbl">Service</div><div class="crm-val">HVAC Tune-Up</div></div>
+          <div class="crm-row"><div class="crm-lbl">Budget</div><div class="crm-val">$200–$400</div></div>
+          <div class="crm-row"><div class="crm-lbl">Timeline</div><div class="crm-val">This week</div></div>
+          <div class="crm-row"><div class="crm-lbl">Source</div><div class="crm-val">Inbound Call</div></div>
+        </div>
+      </div>
+      <div class="feat-text fi" style="transition-delay:.08s">
+        <div class="feat-eyebrow">
+          <div class="feat-icon-sm">🎯</div>
+          <span class="eyebrow" style="margin:0">Qualify &amp; Capture Leads</span>
+        </div>
+        <h2>Every lead captured.<br>Every detail logged.</h2>
+        <p>Wild AI asks the right questions, captures key details, and fills your CRM automatically — so you get a complete lead profile delivered before you even call them back.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-check">✓</div>Custom qualification questions per industry</div>
+          <div class="feat-point"><div class="feat-check">✓</div>Syncs to your CRM in real time</div>
+          <div class="feat-point"><div class="feat-check">✓</div>Full call summaries delivered instantly</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 4: Automated Follow-Ups (reversed) -->
+    <div class="feat-block">
+      <div class="feat-text fi">
+        <div class="feat-eyebrow">
+          <div class="feat-icon-sm">🔁</div>
+          <span class="eyebrow" style="margin:0">Automated Follow-Ups</span>
+        </div>
+        <h2>Follow up instantly.<br>Close more deals.</h2>
+        <p>Wild AI sends reminders, quotes, and follow-up messages on a smart schedule — without you lifting a finger. No lead goes cold, no job goes unbooked.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-check">✓</div>Instant post-call SMS &amp; email summaries</div>
+          <div class="feat-point"><div class="feat-check">✓</div>Appointment reminders reduce no-shows</div>
+          <div class="feat-point"><div class="feat-check">✓</div>Automated estimate &amp; quote follow-ups</div>
+        </div>
+      </div>
+      <div class="feat-visual fi" style="transition-delay:.08s">
+        <div class="tl-wrap">
+          <div class="tl-item">
+            <div class="tl-icon">📞</div>
+            <div class="tl-body">
+              <div class="tl-title">Call Completed — Lead Captured</div>
+              <div class="tl-sub">Today, 2:14 PM</div>
+            </div>
+            <div class="tl-sent">Done</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-icon">💬</div>
+            <div class="tl-body">
+              <div class="tl-title">Confirmation SMS Sent</div>
+              <div class="tl-sub">Today, 2:14 PM</div>
+            </div>
+            <div class="tl-sent">Sent</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-icon">🔔</div>
+            <div class="tl-body">
+              <div class="tl-title">Appointment Reminder — 24hr</div>
+              <div class="tl-sub">Tomorrow, 2:00 PM</div>
+            </div>
+            <div class="tl-sent" style="background:rgba(0,212,255,0.1);border-color:rgba(0,212,255,0.25);color:var(--pa)">Scheduled</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-icon">💼</div>
+            <div class="tl-body">
+              <div class="tl-title">Quote Follow-Up SMS</div>
+              <div class="tl-sub">In 2 days, 10:00 AM</div>
+            </div>
+            <div class="tl-sent" style="background:rgba(0,212,255,0.1);border-color:rgba(0,212,255,0.25);color:var(--pa)">Scheduled</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── How It Works ──────────────────────────────────────────── -->
+<section id="how">
+  <div class="container">
+    <div class="sh center fi">
+      <span class="eyebrow">Setup</span>
+      <h2>Up and running in minutes.</h2>
+      <p>No engineers, no complex integrations. Wild AI is built to get you live fast.</p>
+    </div>
+    <div class="how-steps">
+      <div class="step-card fi" style="transition-delay:.06s">
+        <div class="step-num">01</div>
+        <h3>Connect your number</h3>
+        <p>Forward your existing business number to Wild AI, or get a new dedicated number. Setup takes less than 5 minutes.</p>
+      </div>
+      <div class="step-card fi" style="transition-delay:.12s">
+        <div class="step-num">02</div>
+        <h3>Train your agent</h3>
+        <p>Tell us your services, schedule, FAQs, and tone. Your AI agent learns your business deeply and speaks for your brand.</p>
+      </div>
+      <div class="step-card fi" style="transition-delay:.18s">
+        <div class="step-num">03</div>
+        <h3>Let it run</h3>
+        <p>Wild AI answers, qualifies, books, and follows up. You get call summaries and a live dashboard — and you only talk to ready buyers.</p>
+      </div>
+    </div>
+    <div class="how-cta fi" style="transition-delay:.24s">
+      <a href="#">Get started →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Industries ────────────────────────────────────────────── -->
+<section id="industries">
+  <div class="container">
+    <div class="sh center fi">
+      <span class="eyebrow">Industries</span>
+      <h2>Built for any business where<br>the next call matters.</h2>
+    </div>
+    <div class="industry-grid">
+      <a href="niches/home-services.html" class="industry-card fi" style="transition-delay:.04s">
+        <div class="ic-emoji">🏠</div>
+        <h3>Home Services</h3>
+        <p>Book service calls, dispatch crews, handle emergencies.</p>
+        <div class="ic-link">Explore <span class="ic-arrow">→</span></div>
+      </a>
+      <a href="niches/dental.html" class="industry-card fi" style="transition-delay:.08s">
+        <div class="ic-emoji">🦷</div>
+        <h3>Dental Practices</h3>
+        <p>Fill your chair, reduce no-shows, handle FAQs.</p>
+        <div class="ic-link">Explore <span class="ic-arrow">→</span></div>
+      </a>
+      <a href="niches/medical.html" class="industry-card fi" style="transition-delay:.12s">
+        <div class="ic-emoji">⚕️</div>
+        <h3>Medical Practices</h3>
+        <p>Patient scheduling and intake on autopilot.</p>
+        <div class="ic-link">Explore <span class="ic-arrow">→</span></div>
+      </a>
+      <a href="niches/salons.html" class="industry-card fi" style="transition-delay:.04s">
+        <div class="ic-emoji">✂️</div>
+        <h3>Salons &amp; Spas</h3>
+        <p>Book stylists, manage packages, send reminders.</p>
+        <div class="ic-link">Explore <span class="ic-arrow">→</span></div>
+      </a>
+      <a href="niches/restaurants.html" class="industry-card fi" style="transition-delay:.08s">
+        <div class="ic-emoji">🍕</div>
+        <h3>Restaurants</h3>
+        <p>Reservations, menu questions, waitlist — handled.</p>
+        <div class="ic-link">Explore <span class="ic-arrow">→</span></div>
+      </a>
+      <a href="niches/law-firms.html" class="industry-card fi" style="transition-delay:.12s">
+        <div class="ic-emoji">⚖️</div>
+        <h3>Law Firms</h3>
+        <p>Intake leads, qualify cases, book consults 24/7.</p>
+        <div class="ic-link">Explore <span class="ic-arrow">→</span></div>
+      </a>
+      <a href="niches/ecommerce.html" class="industry-card fi" style="transition-delay:.04s">
+        <div class="ic-emoji">🛒</div>
+        <h3>E-Commerce</h3>
+        <p>Order status, returns, shipping questions at scale.</p>
+        <div class="ic-link">Explore <span class="ic-arrow">→</span></div>
+      </a>
+      <a href="niches/real-estate.html" class="industry-card fi" style="transition-delay:.08s">
+        <div class="ic-emoji">🏢</div>
+        <h3>Real Estate</h3>
+        <p>Qualify buyers, schedule showings, close more deals.</p>
+        <div class="ic-link">Explore <span class="ic-arrow">→</span></div>
+      </a>
+      <a href="niches/medspa.html" class="industry-card fi" style="transition-delay:.12s">
+        <div class="ic-emoji">💆</div>
+        <h3>Med Spa</h3>
+        <p>Book treatments, manage memberships, never miss a client.</p>
+        <div class="ic-link">Explore <span class="ic-arrow">→</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Demo Form ──────────────────────────────────────────── -->
+<section id="demo">
+  <div class="container">
+    <div class="sh center fi">
+      <span class="eyebrow">TRY IT YOURSELF</span>
+      <h2>Experience Wild AI — Live.</h2>
+      <p>Fill in your details and our AI agent will call you within seconds.</p>
+    </div>
+    <div class="demo-form-outer fi" style="transition-delay:.08s">
+      <form id="demo-form" novalidate>
+        <div class="dff">
+          <label for="df-name">FULL NAME</label>
+          <input type="text" id="df-name" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="dff" style="margin-top:20px">
+          <label for="df-phone">PHONE NUMBER</label>
+          <input type="tel" id="df-phone" name="phone" placeholder="+1 (555) 000-0000" required>
+        </div>
+        <div class="dff" style="margin-top:20px">
+          <label for="df-industry">INDUSTRY</label>
+          <select id="df-industry" name="industry" required>
+            <option value="">Select your industry</option>
+            <option value="Home Services">Home Services</option>
+            <option value="Dental Practices">Dental Practices</option>
+            <option value="Medical Practices">Medical Practices</option>
+            <option value="Salons &amp; Spas">Salons &amp; Spas</option>
+            <option value="Restaurants">Restaurants</option>
+            <option value="Law Firms">Law Firms</option>
+            <option value="E-Commerce">E-Commerce</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Med Spa">Med Spa</option>
+          </select>
+        </div>
+        <button type="submit" class="df-btn">Get My Free Demo Call 📞</button>
+        <p class="df-speed">⚡ Our AI agent will call you within 30 seconds</p>
+        <p id="df-error" style="display:none;color:#ff4444;text-align:center;margin-top:8px;font-size:14px;font-weight:500"></p>
+      </form>
+      <div id="df-success" class="df-success" style="display:none"></div>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  // TODO: Replace with your N8N webhook URL
+  var WEBHOOK_URL='https://n8n-mohamed-yasser.rwq1b8.easypanel.host/webhook/Universal';
+  var form=document.getElementById('demo-form');
+  if(!form)return;
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();
+    var nameEl=form.querySelector('[name="name"]'),phoneEl=form.querySelector('[name="phone"]'),indEl=form.querySelector('[name="industry"]');
+    var btn=form.querySelector('.df-btn'),errEl=document.getElementById('df-error'),successEl=document.getElementById('df-success');
+    var valid=true;
+    [nameEl,phoneEl,indEl].forEach(function(el){el.classList.remove('df-invalid');if(!el.value.trim()){el.classList.add('df-invalid');valid=false;}});
+    if(!valid)return;
+    var orig=btn.innerHTML;
+    btn.innerHTML='<span class="df-spin"></span> Calling you now...';
+    btn.disabled=true;errEl.style.display='none';
+    try{
+      var res=await fetch(WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:nameEl.value.trim(),phone:phoneEl.value.trim(),industry:indEl.value})});
+      if(!res.ok)throw new Error();
+      form.style.display='none';successEl.style.display='block';
+      successEl.innerHTML='&#x2705; Your call is on the way, '+nameEl.value.trim()+'!<br>Our Wild AI agent for '+indEl.value+' will call '+phoneEl.value.trim()+' within 30 seconds.';
+    }catch(err){
+      btn.innerHTML=orig;btn.disabled=false;
+      errEl.style.display='block';errEl.textContent='Something went wrong. Please try again or call us at (407) 440-0978';
+    }
+  });
+})();
+</script>
+
+<!-- ─── Testimonials ──────────────────────────────────────────── -->
+<section id="testimonials">
+  <div class="container">
+    <div class="sh center fi">
+      <span class="eyebrow">Social Proof</span>
+      <h2>The results speak for themselves.</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fi" style="transition-delay:.06s">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"We went from missing 40% of calls to capturing every single lead. Wild AI paid for itself in week one."</p>
+        <div class="testi-author">
+          <div class="author-av">MT</div>
+          <div>
+            <div class="author-name">Marcus T.</div>
+            <div class="author-role">HVAC Owner</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fi" style="transition-delay:.12s">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Our front desk used to be overwhelmed. Now the AI handles everything overnight. We wake up to full appointments."</p>
+        <div class="testi-author">
+          <div class="author-av" style="background:#1a1a1a">PS</div>
+          <div>
+            <div class="author-name">Priya S.</div>
+            <div class="author-role">Dental Practice Manager</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fi" style="transition-delay:.18s">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Setup took 10 minutes. Now it books jobs while I sleep. Honestly the best investment I've made for my business."</p>
+        <div class="testi-author">
+          <div class="author-av" style="background:#1a1a1a">JR</div>
+          <div>
+            <div class="author-name">James R.</div>
+            <div class="author-role">Plumbing Company</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ───────────────────────────────────────────────────── -->
+<section id="cta">
+  <div class="cta-glow"></div>
+  <div class="container">
+    <div class="cta-box fi">
+      <span class="eyebrow">Get Started</span>
+      <h2>Ready to never miss<br>a lead again?</h2>
+      <p>Set up in minutes. No technical skills needed.</p>
+      <a href="https://calendar.app.google/ueaZa2oXfEFxtex78" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl">Start Free Trial</a>
+      <a href="https://calendar.app.google/ueaZa2oXfEFxtex78" class="cta-sub" target="_blank" rel="noopener noreferrer">Questions? Talk to our team →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ────────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html"><img src="https://www.wild-ai.net/uploads/logo-1777127155802.png" alt="Wild AI" style="height:36px;"></a>
+        <p>AI voice receptionist and automation for any business. Never miss a call again.</p>
+        <div class="social-row">
+          <a href="https://linkedin.com/company/wild-ai" class="soc-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="industries.html">Industries</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="niches/home-services.html">Home Services</a></li>
+          <li><a href="niches/dental.html">Dental</a></li>
+          <li><a href="niches/medical.html">Medical</a></li>
+          <li><a href="niches/salons.html">Salons &amp; Spas</a></li>
+          <li><a href="niches/restaurants.html">Restaurants</a></li>
+          <li><a href="niches/law-firms.html">Law Firms</a></li>
+          <li><a href="niches/ecommerce.html">E-Commerce</a></li>
+          <li><a href="niches/real-estate.html">Real Estate</a></li>
+          <li><a href="niches/medspa.html">Med Spa</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <a href="mailto:info@wild-ai.net">info@wild-ai.net</a>
+          <a href="tel:+14074400978">(407) 440-0978</a>
+          <a href="https://calendar.app.google/ueaZa2oXfEFxtex78" class="book-link" target="_blank" rel="noopener noreferrer">Book a Call →</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Wild AI. All rights reserved.</span>
+      <div class="footer-meta">
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  /* Nav scroll */
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function () {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  /* Hamburger */
+  var ham = document.getElementById('ham');
+  var menu = document.getElementById('mobile-menu');
+  ham.addEventListener('click', function () {
+    var open = menu.classList.toggle('open');
+    ham.setAttribute('aria-expanded', open);
+    var s = ham.querySelectorAll('span');
+    if (open) {
+      s[0].style.transform = 'translateY(7px) rotate(45deg)';
+      s[1].style.opacity = '0';
+      s[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+    } else {
+      s[0].style.transform = s[2].style.transform = '';
+      s[1].style.opacity = '';
+    }
+  });
+  menu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      menu.classList.remove('open');
+      ham.setAttribute('aria-expanded', 'false');
+      var s = ham.querySelectorAll('span');
+      s[0].style.transform = s[2].style.transform = '';
+      s[1].style.opacity = '';
+    });
+  });
+
+  /* Intersection Observer fade-in */
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fi').forEach(function (el) { obs.observe(el); });
+
+  /* Call card timer */
+  var sec = 0;
+  var timerEl = document.getElementById('cc-timer');
+  setInterval(function () {
+    sec++;
+    var m = Math.floor(sec / 60).toString().padStart(2, '0');
+    var s = (sec % 60).toString().padStart(2, '0');
+    if (timerEl) timerEl.textContent = m + ':' + s;
+  }, 1000);
+})();
+</script>
+<script src="theme.js"></script>
+<script src="animations.js"></script>
+</body>
+</html>

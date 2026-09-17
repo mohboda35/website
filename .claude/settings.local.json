@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest wild-ai-dashboard --typescript --tailwind --eslint --app --src-dir)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(node -e \"const m = require\\('@supabase/auth-helpers-nextjs'\\); console.log\\(Object.keys\\(m\\)\\)\")",
+      "Bash(npm run *)",
+      "Bash(xargs sed -i \"s|import { supabaseAdmin } from '@/lib/supabase'|import { supabaseAdmin } from '@/lib/supabase-admin'|g\")",
+      "Bash(npm uninstall *)",
+      "Bash(Remove-Item -Recurse -Force \"D:/General Dashboard/wild-ai-dashboard/.next\")",
+      "PowerShell(Stop-Process -Id 22548 -Force)",
+      "Bash(node -e \"const pkg = require\\('./node_modules/@supabase/supabase-js/package.json'\\); console.log\\(pkg.version\\)\")",
+      "Bash(node -e \"const {createClient} = require\\('@supabase/supabase-js'\\); const c = createClient\\('https://x.supabase.co','x'\\); console.log\\(Object.keys\\(c.auth.admin\\)\\)\")",
+      "Bash(node -e \"const {createClient} = require\\('@supabase/supabase-js'\\); const c = createClient\\('https://x.supabase.co','x'\\); const proto = Object.getOwnPropertyNames\\(Object.getPrototypeOf\\(c.auth.admin\\)\\); console.log\\(proto\\)\")",
+      "Bash(git push *)",
+      "PowerShell(Get-ChildItem -Recurse \"D:\\\\General Dashboard\\\\wild-ai-dashboard\\\\src\" | Where-Object { !$_.PSIsContainer } | Select-Object FullName | Sort-Object FullName)",
+      "Bash(node -e \"const icons = require\\('lucide-react'\\); console.log\\('Construction:', !!icons.Construction\\); console.log\\('CalendarCheck:', !!icons.CalendarCheck\\); console.log\\('BarChart2:', !!icons.BarChart2\\);\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(Remove-Item -Recurse -Force \"D:\\\\General Dashboard\\\\wild-ai-dashboard\\\\src\\\\app\\\\api\\\\calls\\\\[id]\\\\status\")",
+      "Bash(rm -rf \"D:/General Dashboard/wild-ai-dashboard/src/app/api/calls/[id]/status\" && ls \"D:/General Dashboard/wild-ai-dashboard/src/app/api/calls/[id]/\")",
+      "Bash(node -e \"const p = require\\('D:/General Dashboard/wild-ai-dashboard/node_modules/lucide-react/package.json'\\); console.log\\(p.version\\)\")",
+      "Bash(node -e \"const lr = require\\('D:/General Dashboard/wild-ai-dashboard/node_modules/lucide-react'\\); console.log\\(Object.keys\\(lr\\).filter\\(k => k.startsWith\\('Phone'\\)\\).join\\(', '\\)\\)\")",
+      "Bash(node -e \"const p = require\\('./node_modules/recharts/package.json'\\); console.log\\(p.version\\)\")",
+      "PowerShell(\\(Get-Content \"D:\\\\New Website\\\\style.css\" | Measure-Object -Line\\).Lines)"
+    ]
+  }
+}
